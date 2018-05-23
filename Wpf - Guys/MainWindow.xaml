@@ -1,0 +1,19 @@
+﻿<Window x:Class="Wpf___Guys.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf___Guys"
+        mc:Ignorable="d"
+        Title="Fun with Joe and Bob" Height="315.029" Width="380">
+    <Grid Margin="10,0,0,0">
+        <Label x:Name="joesCashLabel" Content="Label" HorizontalAlignment="Left" Margin="77,42,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="bobsCashLabel" Content="Label" HorizontalAlignment="Left" Margin="77,84,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="bankCashLabel" Content="Label" HorizontalAlignment="Left" Margin="77,126,0,0" VerticalAlignment="Top"/>
+        <Button Content="Give 10$ to Joe" HorizontalAlignment="Left" Margin="52,202,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click"/>
+        <Button Content="Recieve 5$ from Bob" HorizontalAlignment="Left" Margin="223,202,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click_1"/>
+        <Button x:Name="joeGivesToBob" Content="Joe gives 10% to Bob" HorizontalAlignment="Left" Margin="52,242,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click_3"/>
+        <Button x:Name="bobGivesToJoe" Content="Bob give 5$ to Joe" HorizontalAlignment="Left" Margin="223,242,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click_4"/>
+
+    </Grid>
+</Window>
