@@ -60,13 +60,19 @@ namespace Wpf___Guys
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
+            if (joe.Cash >= 10)
             joe.GiveCash(bob.ReceiveCash(10));
+            else
+                joe.GiveCash(0);
             UpdateForm();
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            bob.GiveCash(joe.ReceiveCash(5));
+            if (bob.Cash >= 5)
+                bob.GiveCash(joe.ReceiveCash(5));
+            else
+                bob.GiveCash(0);
             UpdateForm();
         }
     }
